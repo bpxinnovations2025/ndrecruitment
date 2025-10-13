@@ -7,7 +7,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { CgClose } from "react-icons/cg";
 
 const Header = () => {
-  // distructuring the main menu from menu object
+  // destructuring the main menu from menu object
   const { main } = menu;
 
   // states declaration
@@ -19,7 +19,7 @@ const Header = () => {
   const pathname = usePathname();
   const asPath = pathname;
 
-  //sticky header
+  // sticky header
   useEffect(() => {
     const header = headerRef.current;
     const headerHeight = header.clientHeight + 200;
@@ -64,26 +64,46 @@ const Header = () => {
               <React.Fragment key={`menu-${i}`}>
                 {menu.hasChildren ? (
                   <li className="nav-item nav-dropdown group relative">
-                    <span className="nav-link inline-flex items-center">
+                    <span className="nav-link inline-flex items-center cursor-pointer">
                       {menu.name}
-                      <svg className="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                      <svg
+                        className="h-4 w-4 fill-current"
+                        viewBox="0 0 20 20"
+                      >
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                       </svg>
                     </span>
-                    <ul className="nav-dropdown-list hidden max-h-0 w-full overflow-hidden border border-border-secondary py-0 transition-all duration-500 group-hover:block group-hover:max-h-[106px] group-hover:py-2 lg:invisible lg:absolute lg:left-1/2 lg:block lg:w-auto lg:-translate-x-1/2 lg:group-hover:visible lg:group-hover:opacity-100">
-                      {menu.children.map((child, i) => (
-                        <li className="nav-dropdown-item" key={`children-${i}`}>
-                          <Link
-                            href={child.url}
-                            className={`nav-dropdown-link block transition-all ${
-                              asPath === child.url && "active"
-                            }`}
-                          >
-                            {child.name}
-                          </Link>
+                    {/* Full-width dropdown */}
+                    <div className="nav-dropdown-container absolute left-0 right-0 top-full">
+                      <ul className="nav-dropdown-list hidden bg-white border-t border-gray-200 shadow-lg lg:group-hover:flex lg:visible">
+                        <li className="w-full">
+                          <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-8 py-6 w-full max-w-screen-xl">
+                            {menu.children.map((group, i) => (
+                              <div key={`group-${i}`} className="min-w-0">
+                                <h4 className="font-medium text-dark text-sm mb-3">
+                                  {group.title}
+                                </h4>
+                                <ul className="space-y-2">
+                                  {group.links.map((link, j) => (
+                                    <li key={`link-${j}`}>
+                                      <Link
+                                        href={link.url}
+                                        className={`block px-2 py-1 text-xs text-gray-600 hover:text-primary transition leading-relaxed ${
+                                          asPath === link.url && "active"
+                                        }`}
+                                        onClick={() => setShowMenu(false)}
+                                      >
+                                        {link.name}
+                                      </Link>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            ))}
+                          </div>
                         </li>
-                      ))}
-                    </ul>
+                      </ul>
+                    </div>
                   </li>
                 ) : (
                   <li className="nav-item">
@@ -92,6 +112,7 @@ const Header = () => {
                       className={`nav-link block ${
                         asPath === menu.url && "active"
                       }`}
+                      onClick={() => setShowMenu(false)}
                     >
                       {menu.name}
                     </Link>
@@ -104,6 +125,7 @@ const Header = () => {
                 <Link
                   className="btn btn-primary hidden lg:flex"
                   href={config.nav_button.link}
+                  onClick={() => setShowMenu(false)}
                 >
                   {config.nav_button.label}
                 </Link>
@@ -150,6 +172,57 @@ const Header = () => {
           </div>
         </nav>
       </header>
+
+      <style jsx>{`
+        .header-height-fix {
+          height: 80px;
+        }
+        
+        .header {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 50;
+          background: white;
+          transition: transform 0.3s ease;
+        }
+        
+        .header-sticky {
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+        
+        .header.unpinned {
+          transform: translateY(-100%);
+        }
+        
+        .nav-dropdown-container {
+          left: 0;
+          right: 0;
+        }
+        
+        .nav-dropdown-list {
+          width: 100vw;
+          margin-left: calc(-50vw + 50%);
+        }
+        
+        @media (max-width: 1023px) {
+          .nav-dropdown-list {
+            position: static;
+            width: 100%;
+            margin-left: 0;
+            transform: none;
+            border: none;
+            box-shadow: none;
+          }
+          
+          .nav-dropdown-container {
+            position: static;
+            width: 100%;
+            transform: none;
+          }
+        }
+      `}</style>
     </>
   );
 };

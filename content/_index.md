@@ -1,68 +1,82 @@
 ---
 banner:
-  title: "Andromeda is the most intuitive </br> way to prototype Designs"
-  image: /images/banner-app.png
+  title: "Empowering Global Talent </br> Supporting Dreams Across Borders"
+  image: /images/websiteBar.jpg
   link:
-    label: Get Premium Version
-    href: "https://themefisher.com/products/andromeda-nextjs"
+    label: Study Abroad
+    href: ""
+
 
 ##brands
 brands:
-  - /images/brands/01-colored.png
-  - /images/brands/02-colored.png
-  - /images/brands/03-colored.png
-  - /images/brands/04-colored.png
-  - /images/brands/05-colored.png
-  - /images/brands/06-colored.png
-  - /images/brands/04-colored.png
-  - /images/brands/05-colored.png
-  - /images/brands/06-colored.png
+  - /images/brands/amazon.jpg
+  - /images/brands/barclays.jpg
+  - /images/brands/doe.jpg
+  - /images/brands/jpm.jpg
+  - /images/brands/meta.jpg
+  - /images/brands/netflix-logo.png
+  - /images/brands/nhs.jpg
+  - /images/brands/jpm.jpg
+  - /images/brands/meta.jpg
 
 #features
 features:
-  sub_title: SPECIAL FEATURES
-  title: Elements To </br> Get You Started
+  sub_title:  LOREM IPSUM
+  title: Morbi egestas </br> vulputate egestas sollicitudin
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.
   list:
     - icon: 'lock' # feather icon: https://feathericons.com/
-      title: Updated Security
+      title: Lorem ipsum dolor sit
       content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
     - icon: 'wind'
-      title: Magnetic Turning
+      title: Lorem ipsum dolor sit
       content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
     - icon: 'shield'
-      title: Secured & up-to-date
+      title: Lorem ipsum dolor sit
       content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
     - icon: 'link'
-      title: Instant Link Sharing
+      title: Lorem ipsum dolor sit
       content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
     - icon: 'lock'
-      title: Updated Security
+      title: Lorem ipsum dolor sit
       content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
     - icon: 'wind'
-      title: Magnetic Turning
+      title: Lorem ipsum dolor sit
       content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
 
 #intro
 intro:
-  title: Built Exclusively For You
+  title: Made For You
   subtitle: SHORT INTRO VIDEO
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.
   thumbnail: "/images/video-popup.jpg"
-  video_id: dyZcRRWiuuw
+  video_id: bZ9NuDkcrX8
 
 #speciality
 speciality:
   primary:
-    title: You Will Not Miss Your All Misunderstandings
-    subtitle: PRIMARY SPECIALITY
-    description: Protect your design vision and leave nothing up to interpretation with interaction recipes. Quickly share and access all your team members interactions by using libraries, ensuring consistency throughout the.
-    image: /images/features-01.png
+    title: Smooth Pathways to Your Visa
+    subtitle: Visa Assistance & Consultancy
+    description: Expert guidance through every stage of your visa process, from paperwork to approval, ensuring a seamless and stress-free experience.  
+    image: /images/teaching.jpg
+
   secondary:
-    title: Say Hello To No-Code The Advance Creation
-    subtitle: SECONDARY SPECIALITY
-    description: From the simplest of interactions to those that use Excel-gradeing formulas, ProtoPie can handle them all. Make mind-blowing of New interactions everyday without ever having to write any new code.
-    image: /images/features-02.png
+    title: Careers in Care, Made Simple
+    subtitle: Healthcare Sector Recruitment
+    description: Matching skilled healthcare professionals with leading employers, helping you build a rewarding career while meeting industry staffing needs.  
+    image: /images/old.jpg
+
+  senior:
+    title: Trusted Legal Support for Life’s Challenges
+    subtitle: Legal Consultancy – Family, Custody & Immigration
+    description: Providing clear legal advice and representation in family, custody, and immigration matters, guiding you confidently through complex cases.  
+    image: /images/law.jpeg
+
+  tertiary:
+    title: Excel in Your OSCE & NMC Journey
+    subtitle: OSCE Exam & NMC Consultation for Healthcare Workers
+    description: Tailored preparation and guidance for healthcare workers tackling OSCE exams and NMC registration, ensuring you meet professional standards with confidence.  
+    image: /images/health.jpg
 
 
 #Testimonial
@@ -71,37 +85,26 @@ testimonial:
   subtitle: Don’t Take Our Word For It
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.
   list:
-    - author: David Cameron
-      avatar: /images/user-img/01.jpg
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-    - author: David Cameron
-      avatar: /images/user-img/02.jpg
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-    - author: David Cameron
-      avatar: /images/user-img/03.jpg
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-    - author: David Cameron
-      avatar: /images/user-img/04.png
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-    - author: David Cameron
-      avatar: /images/user-img/05.jpg
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-    - author: David Cameron
-      avatar: /images/user-img/06.jpg
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-    - author: David Cameron
-      avatar: /images/user-img/07.jpg
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
-    - author: David Cameron
-      avatar: /images/user-img/08.jpg
-      profession: CEO, Nexuspay
-      content: Lorem ipsum dolor amet, conseetur adipiscing elit. Ornare quam porta arcu congue felis volutpat. Vitae lectudbfs pellentesque vitae dolor
+    - author: Jasmine A.
+      avatar: /images/user-img/lady.png
+      profession: Nurse in the UK
+      content: NorthDevon Recruitment provided exceptional support, from OET exam preparation to securing a full-time overseas role. Their professionalism, dedication, and client-focused approach ensured a successful career outcome and a highly positive experience.
+    - author: Dominic T.
+      avatar: /images/user-img/male.png
+      profession: TOEFL Test Taker
+      content: NDR made TOEFL preparation manageable and effective through personalized study plans, expert tutoring, and high-quality resources. Their support helped achieve an excellent score, opening opportunities to apply to top universities abroad.
+    - author: Abigail S.
+      avatar: /images/user-img/lady.png
+      profession: Graphic Design Intern in USA
+      content: NDR’s internship program provided a well-organized, goal-oriented experience with hands-on learning and valuable mentorship. It offered international exposure that laid a strong foundation for future career growth.
+    - author: Andrews A.
+      avatar: /images/user-img/male.png
+      profession: IELTS Test Taker
+      content: With NDR’s expert coaching, tailored guidance, and high-quality materials, achieving a strong IELTS score became possible. Their test preparation services are highly recommended for anyone aiming to excel in standardized exams.
+    - author: Jessica O.
+      avatar: /images/user-img/lady.png
+      profession: Business Consultant in Canada
+      content: NDR guided me through every stage—from test preparation to internship and finally a full-time overseas job. Their professional and caring team provided comprehensive support that made achieving my career goals possible.
+   
 
 ---

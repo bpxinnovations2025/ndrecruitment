@@ -248,9 +248,11 @@ const About = ({ data }) => {
                     <ImageFallback
                       className="object-contain"
                       src={brand}
-                      sizes="100vw"
+                      width={100}
+                      height={100}
+                      //sizes="150vw"
                       alt=""
-                      fill={true}
+                      //fill={true}
                       priority={true}
                     />
                   </div>

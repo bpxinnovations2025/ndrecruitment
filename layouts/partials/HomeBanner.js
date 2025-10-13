@@ -159,14 +159,21 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
                     "h1",
                     "mb-8 banner-title opacity-0"
                   )}
-                  <div className="banner-btn opacity-0">
+                  <div className="banner-btn opacity-0 flex justify-center gap-4">
                     <Link
                       className="btn btn-primary"
                       href={bannerData.link.href}
                     >
                       {bannerData.link.label}
                     </Link>
+                    <Link
+                      className="btn btn-outline-primary"
+                      href={bannerData.secondaryLink?.href || "#"}
+                    >
+                      {bannerData.secondaryLink?.label || "Visa Help"}
+                    </Link>
                   </div>
+
                 </div>
                 <div className="col-10">
                   <ImageFallback
@@ -204,9 +211,10 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
                       <ImageFallback
                         className="object-contain"
                         src={brand}
-                        sizes="100vw"
+                        width={200} // add a width attribute
+                        height={200}
                         alt=""
-                        fill={true}
+                        //fill={true}
                         priority={true}
                       />
                     </div>
