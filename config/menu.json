@@ -61,6 +61,10 @@
     {
       "name": "Contact",
       "url": "/contact"
+    },
+        {
+      "name": "Jobs & Careers",
+      "url": "/jobs-and-careers"
     }
   ],
   "footer": [

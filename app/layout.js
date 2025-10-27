@@ -6,6 +6,8 @@ import TwSizeIndicator from "@layouts/components/TwSizeIndicator";
 import Footer from "@layouts/partials/Footer";
 import Header from "@layouts/partials/Header";
 import "../styles/style.scss";
+import { AuthProvider } from "context/AuthContext";
+import Providers from "./provider";
 
 export default function RootLayout({ children }) {
   // import google font css
@@ -54,10 +56,14 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body suppressHydrationWarning={true}>
-        <TwSizeIndicator />
-        <Header />
-        {children}
-        <Footer />
+        <Providers>
+          <AuthProvider>
+            <TwSizeIndicator />
+            <Header />
+            {children}
+            <Footer />
+          </AuthProvider>
+        </Providers>
       </body>
     </html>
   );
