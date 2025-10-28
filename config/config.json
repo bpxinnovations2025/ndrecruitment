@@ -37,13 +37,13 @@
   "metadata": {
     "meta_author": "Themefisher",
     "meta_image": "/images/og-image.png",
-    "meta_description": "Andromeda-light Nextjs Blog Template"
+    "meta_description": "North Devon recruitment"
   },
 
   "call_to_action": {
     "enable": true,
     "title": "Get Our Brochure Now",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.",
+    "content": "Discover more about who we are and what we do — view our detailed company brochure by clicking the button below.",
     "button": {
       "label": "Download",
       "link": ""
