@@ -89,6 +89,6 @@ const Contact = ({ data }) => {
       </div>
     </section>
   );
-};
+ };
 
 export default Contact;

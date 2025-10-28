@@ -20,40 +20,30 @@
         {
           "title": "Recruitment",
           "links": [
-            { "name": "Skilled Worker Recruitment", "url": "/services/skilled-worker-recruitment" },
-            { "name": "Creative Worker Opportunities", "url": "/services/creative-worker-opportunities" },
-            { "name": "Healthcare Recruitment", "url": "/services/healthcare-recruitment" },
-            { "name": "OSCE & NMC Support", "url": "/services/osce-nmc-support" },
-            { "name": "Visa Assistance & Consultancy", "url": "/services/visa-assistance" }
+            { "name": "Skilled Worker Recruitment", "url": "/skilled-worker-recruitment" },
+            { "name": "Healthcare Recruitment", "url": "/healthcare-recruitment" },
+            { "name": "OSCE & NMC Support", "url": "/osce-nmc-support" },
+            { "name": "Visa Assistance & Consultancy", "url": "/visa-assistance" }
           ]
         },
         {
           "title": "Legal Support",
           "links": [
-            { "name": "Immigration law advice", "url": "/services/immigration-law-advice" },
-            { "name": "Family reunification & custody", "url": "/services/family-reunification" },
-            { "name": "Workplace rights & contract review", "url": "/services/workplace-rights" },
-            { "name": "Partnerships with immigration lawyers", "url": "/services/immigration-lawyers" }
+            { "name": "Family, Custody & Immigration", "url": "/immigration-law-advice" }
+
           ]
         },
         {
           "title": "Study Abroad",
           "links": [
-            { "name": "Personalized Counseling", "url": "/services/personalized-counseling" },
-            { "name": "Application Support", "url": "/services/application-support" },
-            { "name": "Visa Guidance", "url": "/services/visa-guidance" },
-            { "name": "Accommodation Assistance", "url": "/services/accommodation-assistance" },
-            { "name": "Pre-departure Orientation", "url": "/services/pre-departure-orientation" },
-            { "name": "Ongoing Support", "url": "/services/ongoing-support" }
+            { "name": "Do you need to study abroad?", "url": "/study-abroad" }
+
           ]
         },
         {
           "title": "English & Exam Prep",
           "links": [
-            { "name": "IELTS & PTE guidance", "url": "/services/ielts-pte-guidance" },
-            { "name": "Partner info (British Council, Pearson PTE)", "url": "/services/partner-info" },
-            { "name": "Exam registration process", "url": "/services/exam-registration" },
-            { "name": "Language training resources", "url": "/services/language-training" }
+            { "name": "English Language Proficiency Support", "url": "/proficiency-support" }
           ]
         }
       ]
