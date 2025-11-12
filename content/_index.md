@@ -21,34 +21,28 @@ brands:
 
 #features
 features:
-  sub_title:  LOREM IPSUM
-  title: Morbi egestas </br> vulputate egestas sollicitudin
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  sub_title: 
+  title: Empowering Global Talent, </br>Supporting Dreams Across Borders
+  description: Our Global Recruitment Department connects skilled professionals with rewarding job opportunities in the UK and beyond,</br> offering full support from application to placement.
   list:
     - icon: 'lock' # feather icon: https://feathericons.com/
-      title: Lorem ipsum dolor sit
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
+      title: Global Job Opportunities
+      content: We connect skilled and creative professionals with trusted UK employers. From healthcare to technical roles, we help you find the right job that matches your skills and goals.
+
     - icon: 'wind'
-      title: Lorem ipsum dolor sit
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
+      title: Visa & Immigration Support
+      content: Our experts guide you through every step of your visa process — from document checks to final approval. We make Skilled Worker and Student Visa applications stress-free.
+
     - icon: 'shield'
-      title: Lorem ipsum dolor sit
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
-    - icon: 'link'
-      title: Lorem ipsum dolor sit
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
-    - icon: 'lock'
-      title: Lorem ipsum dolor sit
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
-    - icon: 'wind'
-      title: Lorem ipsum dolor sit
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
+      title: Healthcare & Legal Assistance
+      content: We help nurses and healthcare workers with OSCE exams, NMC registration, and UK placements. We also provide reliable legal advice on immigration and family matters.
+   
 
 #intro
 intro:
   title: Made For You
   subtitle: SHORT INTRO VIDEO
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  description: At North Devon Recruitment, we bridge global talent with opportunities across the UK and beyond </br>offering end-to-end support in recruitment, visas, education,and legal guidance. </br>Whether you’re seeking a job, study abroad, or a fresh start, we’re your trusted partner in turning ambitions into reality.
   thumbnail: "/images/video-popup.jpg"
   video_id: bZ9NuDkcrX8
 

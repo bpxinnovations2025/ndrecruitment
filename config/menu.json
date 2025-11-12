@@ -58,17 +58,25 @@
     }
   ],
   "footer": [
+     {
+      "name": "Home",
+      "url": "/"
+    },
     {
       "name": "About",
       "url": "/about"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
+      "name": "Blogs",
+      "url": "/posts"
+    },
+      {
+      "name": "Jobs & Careers",
+      "url": "/jobs-and-careers"
     },
     {
-      "name": "Terms & Conditions",
-      "url": "/terms-policy"
+      "name": "Contact us",
+      "url": "/contact"
     }
   ]
 }
