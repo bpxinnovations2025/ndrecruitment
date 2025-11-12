@@ -7,7 +7,14 @@ import JobsAndCareers from "@layouts/Jobs-and-Careers";
 import Login from "@layouts/Login";
 import SeoMeta from "@layouts/partials/SeoMeta";
 import Signup from "@layouts/Signup";
+import SkilledWorkerRecruitment from "@layouts/skilled-worker-recruitment";
+import VisaAssistance from "@layouts/visa-assistance";
+import EnglishProficiency from "@layouts/proficiency-support";
 import { getRegularPage, getSinglePage } from "@lib/contentParser";
+import OsceNmc from "@layouts/osce-nmc-support";
+import HealthcareRecruitment from "@layouts/healthcare-recruitment";
+import LegalServices from "@layouts/immigration-law-advice";
+import StudyAbroad from "@layouts/study-abroad";
 
 // for all regular pages
 const RegularPages = async ({ params }) => {
@@ -40,6 +47,21 @@ const RegularPages = async ({ params }) => {
         <JobsAndCareers data={pageData} />
       ) : layout === "login" ? (
         <Login data={pageData} />
+      ) : layout === "skilled-worker-recruitment" ? (
+        <SkilledWorkerRecruitment data={pageData} />
+      ) : layout === "visa-assistance" ? (
+        <VisaAssistance data={pageData} />
+      ) : layout === "proficiency-support" ? (
+        <EnglishProficiency data={pageData} />
+      ) : layout === "osce-nmc-support" ? (
+        <OsceNmc data={pageData} />
+      ): layout === "healthcare-recruitment" ? (
+        <HealthcareRecruitment data={pageData} />
+      ) : layout === "immigration-law-advice" ? (
+        <LegalServices data={pageData} />
+      ) : layout === "study-abroad" ? (
+        <StudyAbroad data={pageData} />
+      
       ) : layout === "signup" ? (
         <Signup data={pageData} />
       ) : (
