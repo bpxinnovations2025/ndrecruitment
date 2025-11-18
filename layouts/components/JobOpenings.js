@@ -16,6 +16,7 @@ import { useAuth } from "context/AuthContext";
 import { useRouter } from "next/navigation";
 import useAxios from "@hooks/useAxios";
 import swal from "sweetalert2";
+import Link from "next/link";
 
 const JobOpenings = () => {
   const { isLoggedIn, user } = useAuth();
@@ -82,6 +83,8 @@ const JobOpenings = () => {
       setLoading(false);
     }
   };
+
+  
 
   const handleSearch = () => {
     setCurrentPage(1);
@@ -371,6 +374,7 @@ const JobOpenings = () => {
         )}
 
         {/* Job Cards Grid */}
+
         {!loading && (
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {jobs.length > 0 ? (
@@ -379,96 +383,102 @@ const JobOpenings = () => {
                   key={job.id}
                   className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow"
                 >
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Briefcase className="w-6 h-6 text-orange-500" />
+                  <Link href={`/jobs/${job.slug}`}>
+                    <div className="flex items-start gap-4 mb-4">
+                      <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Briefcase className="w-6 h-6 text-orange-500" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-xl font-semibold text-gray-900 mb-1">
+                          {job.title}
+                        </h3>
+                        <p className="text-gray-600">{job.company}</p>
+                      </div>
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-1">
-                        {job.title}
-                      </h3>
-                      <p className="text-gray-600">{job.company}</p>
-                    </div>
-                  </div>
 
-                  <div className="flex flex-wrap gap-4 mb-4 text-sm text-gray-600">
-                    <div className="flex items-center gap-1">
-                      <MapPin className="w-4 h-4" />
-                      <span>{job.location}</span>
+                    <div className="flex flex-wrap gap-4 mb-4 text-sm text-gray-600">
+                      <div className="flex items-center gap-1">
+                        <MapPin className="w-4 h-4" />
+                        <span>{job.location}</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <span>{getJobTypeIcon(job.job_type)}</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <DollarSign className="w-4 h-4" />
+                        <span>{job.salary_range}</span>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-1">
-                      <span>{getJobTypeIcon(job.job_type)}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <DollarSign className="w-4 h-4" />
-                      <span>{job.salary_range}</span>
-                    </div>
-                  </div>
 
-                  <p className="text-gray-600 mb-4">
-                    {job.description.length > 150
-                      ? `${job.description
-                          .substring(0, 150)
-                          .trim()
-                          .replace(/\s+\S*$/, "")}...`
-                      : job.description}
-                  </p>
+                    <p className="text-gray-600 mb-4">
+                      {job.description.length > 150
+                        ? `${job.description
+                            .substring(0, 150)
+                            .trim()
+                            .replace(/\s+\S*$/, "")}...`
+                        : job.description}
+                    </p>
 
-                  {/* Requirements Section - ADD THIS */}
-                  {job.requirements && (
-                    <div className="mb-4">
-                      <h4 className="text-sm font-medium text-gray-900 mb-2">
-                        Requirements:
-                      </h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        {job.requirements
-                          .split("\n")
-                          .filter((req) => req.trim())
-                          .slice(0, 3)
-                          .map((requirement, index) => (
-                            <li key={index} className="flex items-start">
-                              <span className="text-orange-500 mr-2">•</span>
-                              <span>{requirement.trim()}</span>
+                    {/* Requirements Section */}
+                    {job.requirements && (
+                      <div className="mb-4">
+                        <h4 className="text-sm font-medium text-gray-900 mb-2">
+                          Requirements:
+                        </h4>
+                        <ul className="text-sm text-gray-600 space-y-1">
+                          {job.requirements
+                            .split("\n")
+                            .filter((req) => req.trim())
+                            .slice(0, 3)
+                            .map((requirement, index) => (
+                              <li key={index} className="flex items-start">
+                                <span className="text-orange-500 mr-2">•</span>
+                                <span>{requirement.trim()}</span>
+                              </li>
+                            ))}
+                          {job.requirements
+                            .split("\n")
+                            .filter((req) => req.trim()).length > 3 && (
+                            <li className="text-gray-500 text-xs">
+                              +
+                              {job.requirements
+                                .split("\n")
+                                .filter((req) => req.trim()).length - 3}{" "}
+                              more requirements
                             </li>
-                          ))}
-                        {job.requirements
-                          .split("\n")
-                          .filter((req) => req.trim()).length > 3 && (
-                          <li className="text-gray-500 text-xs">
-                            +
-                            {job.requirements
-                              .split("\n")
-                              .filter((req) => req.trim()).length - 3}{" "}
-                            more requirements
-                          </li>
-                        )}
-                      </ul>
-                    </div>
-                  )}
+                          )}
+                        </ul>
+                      </div>
+                    )}
 
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">
-                      {job.posted_date}
-                    </span>
-                    <button
-                      className={`px-6 py-2 rounded-lg font-medium transition-colors flex items-center gap-2 ${
-                        job.has_applied
-                          ? "bg-green-500 text-white cursor-not-allowed"
-                          : "bg-orange-500 hover:bg-orange-600 text-white"
-                      }`}
-                      onClick={() => handleApply(job)}
-                      disabled={job.has_applied || loading}
-                    >
-                      {job.has_applied ? (
-                        <>
-                          <CheckCircle className="w-4 h-4" />
-                          Applied
-                        </>
-                      ) : (
-                        "Apply Now"
-                      )}
-                    </button>
-                  </div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-gray-500">
+                        {job.posted_date}
+                      </span>
+                      <button
+                        className={`px-6 py-2 rounded-lg font-medium transition-colors flex items-center gap-2 ${
+                          job.has_applied
+                            ? "bg-green-500 text-white cursor-not-allowed"
+                            : "bg-orange-500 hover:bg-orange-600 text-white"
+                        }`}
+                        onClick={(e) => {
+                          e.preventDefault(); // Prevent link navigation
+                          e.stopPropagation(); // Stop event bubbling
+                          handleApply(job);
+                        }}
+                        disabled={job.has_applied || loading}
+                      >
+                        {job.has_applied ? (
+                          <>
+                            <CheckCircle className="w-4 h-4" />
+                            Applied
+                          </>
+                        ) : (
+                          "Apply Now"
+                        )}
+                      </button>
+                    </div>
+                  </Link>
                 </div>
               ))
             ) : (
