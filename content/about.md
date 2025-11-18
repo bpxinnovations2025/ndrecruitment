@@ -66,17 +66,23 @@ clients:
 our_member:
   subtitle: OUR MEMBERS
   title: The People Behind
-  content: Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br/> accusantium doloremque laudantium, totam rem aperiam, eaque ipsa q
+  content:
   list:
-    - name: Bandoh Kwaku
-      field: Director
-      image: /images/about/womang.png
-    - name: Kwaku Bandoh
-      field: Operations
-      image: /images/about/
-    - name: K. Bandoh
-      field: Training Manager
-      image: /images/about/
+    - name: Rose Asa- Awuku 
+      field: Operations Manager
+      image: /images/about/team/Rose.png
+    - name: Sarah Sarpong
+      field: Quality Assurance Manager 
+      image: /images/about/team/Sarah.png
+    - name: Dennis Ntim Banahene Boamah 
+      field: Project Manager 
+      image: /images/about/team/Dennis.png
+    - name: Abigail Esinam Voegbolor 
+      field: Head of Global Recruitment Team
+      image: /images/about/team/Abigail.png  
+    - name: Gene Adade Akuffo
+      field: Head of Standardized Tests Department 
+      image: /images/about/team/Gene.png  
 
 ## office
 our_office:
