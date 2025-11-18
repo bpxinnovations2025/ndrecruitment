@@ -70,7 +70,7 @@ const Social = ({ source, className }) => {
         <li className="inline-block">
           <a
             aria-label="facebook"
-            href={facebook}
+            href='https://web.facebook.com/profile.php?id=61554625350987'
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
@@ -82,11 +82,11 @@ const Social = ({ source, className }) => {
         <li className="inline-block">
           <a
             aria-label="twitter"
-            href={twitter}
+            href='https://www.instagram.com/northdevon_?igsh=dnhsNDdodGdhZmho'
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
-            <IoLogoTwitter />
+            <IoLogoInstagram />
           </a>
         </li>
       )}
@@ -94,7 +94,7 @@ const Social = ({ source, className }) => {
         <li className="inline-block">
           <a
             aria-label="instagram"
-            href={instagram}
+            href='https://www.instagram.com/northdevon_?igsh=dnhsNDdodGdhZmho'
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
@@ -118,7 +118,7 @@ const Social = ({ source, className }) => {
         <li className="inline-block">
           <a
             aria-label="linkedin"
-            href={linkedin}
+            href='https://www.linkedin.com/company/northdevon/posts/?feedView=all'
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
@@ -214,7 +214,7 @@ const Social = ({ source, className }) => {
         <li className="inline-block">
           <a
             aria-label="dribbble"
-            href={dribbble}
+            href='https://dribbble.com'
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
@@ -234,7 +234,7 @@ const Social = ({ source, className }) => {
           </a>
         </li>
       )}
-      {pinterest && (
+      {/* {pinterest && (
         <li className="inline-block">
           <a
             aria-label="pinterest"
@@ -245,7 +245,7 @@ const Social = ({ source, className }) => {
             <IoLogoPinterest />
           </a>
         </li>
-      )}
+      )} */}
       {soundcloud && (
         <li className="inline-block">
           <a
