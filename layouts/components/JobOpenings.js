@@ -84,8 +84,6 @@ const JobOpenings = () => {
     }
   };
 
-  
-
   const handleSearch = () => {
     setCurrentPage(1);
     fetchJobs();
@@ -347,16 +345,16 @@ const JobOpenings = () => {
         </div>
 
         {/* Job Openings Header */}
-        <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-bold text-gray-900">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 text-center sm:text-left">
             Job Openings {jobs.length > 0 && `(${jobs.length})`}
           </h2>
-          <div className="flex items-center gap-3">
-            <span className="text-gray-600">Sort by:</span>
+          <div className="flex items-center gap-2 sm:gap-3">
+            <span className="text-gray-600 text-sm sm:text-base">Sort by:</span>
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="border border-gray-300 rounded-lg px-3 sm:px-4 py-1 sm:py-2 focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm sm:text-base"
               disabled={loading}
             >
               <option value="-created_at">Most Recent</option>
